@@ -1,0 +1,14 @@
+Mover disco de A a B
+Color del disco: Amarillo
+Mover disco de A a C
+Color del disco: Azul
+Mover disco de B a C
+Color del disco: Amarillo
+Mover disco de A a B
+Color del disco: Verde
+Mover disco de C a A
+Color del disco: Amarillo
+Mover disco de C a B
+Color del disco: Azul
+Mover disco de A a B
+Color del disco: Amarillo

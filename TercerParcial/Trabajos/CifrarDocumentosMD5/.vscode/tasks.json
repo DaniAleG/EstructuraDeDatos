@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build cifrarDocumento",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "cifrarDocumento.cpp",
+                "-o",
+                "cifrarDocumento.exe",
+                "-L.",
+                "-lmd5"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Genera el archivo .exe para cifrar documentos"
+        },
+        {
+            "label": "run cifrarDocumento",
+            "type": "shell",
+            "command": "./cifrarDocumento.exe",
+            "args": [
+                "${fileDirname}/input.txt",
+                "${fileDirname}/output.txt"
+            ],
+            "dependsOn": "build cifrarDocumento",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

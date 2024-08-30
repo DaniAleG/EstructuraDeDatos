@@ -1,0 +1,6 @@
+void ejemploLogaritmico(int n) {
+    int temp = n;
+    while (temp > 1) {
+        temp /= 2;  // Dividir por 2 cada vez
+    }
+}
